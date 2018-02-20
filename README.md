@@ -5,7 +5,7 @@ We can display  time and date of a specific city by using this component.
 
 <p><img src="\demo-img\demoimage.JPG"></p>
 
-**To preview demo of to do list project:** [Click here](https://stackblitz.com/edit/angular-nl8w5v-gjedaw?embed=1&file=src/app/world-clock/worldclock.component.ts&hideNavigation=1&view=preview)
+**To preview demo of world clock project:** [Click here](https://stackblitz.com/edit/angular-nl8w5v-gjedaw?embed=1&file=src/app/world-clock/worldclock.component.ts&hideNavigation=1&view=preview)
 
 ## Using the complete angular project
 Download the world-clock folder into your project and run the application.
