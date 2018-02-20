@@ -1,7 +1,7 @@
 # World Clock Using Angular
 Worldclock is a simple component designed using angular.
 
-We can display  time and date of a specific city by using this component.
+We can display time of a specific city by using this component.
 
 <p><img src="\demo-img\demoimage.JPG"></p>
 
