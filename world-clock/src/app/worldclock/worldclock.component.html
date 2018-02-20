@@ -1,0 +1,14 @@
+<div class="outDiv"></div>
+<div class="main">
+    <h3 class="">WORLD CLOCK</h3>
+   <p>{{cityname}}</p>
+
+   <input type="text" value={{localTime}}>
+   <button type="button" class="btn btn-primary"(click)='local()'>Edit</button>
+<br><br>
+<div class="city" [class.modify]="modify">
+ <input type="text" class="cityOne" [(ngModel)]="city">
+  <button class="submit btn btn-primary" (click)='getClockData()'>Search</button> 
+   <div class="error">{{errorMessage}}</div>
+</div>
+</div>

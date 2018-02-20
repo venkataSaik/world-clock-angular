@@ -1,0 +1,43 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.city{
+  display: none;
+  /* margin-left: 0px; */
+}
+.modify{
+  display: block;
+}
+
+.outDiv{
+   width:350px;
+   text-align: center;
+   margin:10px auto;
+
+}
+.main{
+  margin:20px auto;
+  border:1px solid black;
+  width:300px;
+  height:250px;
+  background-color:#adbdd6;
+ text-align: center;
+
+}
+p{
+  color:white;
+  font-size: 30px;
+}
+.cityOne{
+  /* margin-left:15px; */
+}
+input[type=text]{
+  width: 150px;
+  height: 35px;
+}
+button{
+  /* height: 25px; */
+  width: 80px;
+  text-align:center;
+  /* margin-top:0px; */
+}
