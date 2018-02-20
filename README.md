@@ -1,5 +1,3 @@
-# MyWorldclockproject
-
 # World Clock Using Angular
 Worldclock is a simple component designed using angular.
 
