@@ -1,27 +1,66 @@
 # MyWorldclockproject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+# World Clock Using Angular
+Worldclock is a simple component designed using angular.
 
-## Development server
+We can display  time and date of a specific city by using this component.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p><img src="\demo-img\demoimage.JPG"></p>
 
-## Code scaffolding
+**To preview demo of to do list project:** [Click here](https://stackblitz.com/edit/angular-nl8w5v-gjedaw?embed=1&file=src/app/world-clock/worldclock.component.ts&hideNavigation=1&view=preview)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Using the complete angular project
+Download the world-clock folder into your project and run the application.
+### Installing
 
-## Build
+```
+> npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Run server
 
-## Running unit tests
+```
+> ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+## Working Process
+- when user enters a city name it will display the time,date and location 
 
-## Running end-to-end tests
+- when user is not entering any city name, it will display error message.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- when user enters a wrong city name, it will display error message.
 
-## Further help
+- For getting output after giving a city name click on submit button.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+DateInfo interface is used to convert json data to interface type.
+
+## DateInfo Interface
+```
+export interface DateInfo{
+  
+  dt:number;
+  
+}
+```
+### Input Decorator
+@input is used to provide user with required input.
+
+ @Input() cityFromParent: String;
+ 
+ cityFromParent is the variable which will hold user input.
+
+
+### Output Decorator 
+
+<app-worldclock [cityName]="cityFromParent" (getDate)="getDataJson($event)"></app-worldclock>
+
+getDate is the variable I have used to emit output to user.
+```
+getDataJson(event){
+console.log("parent")
+console.log(event);
+}
+```
+
+This will give user with full information on entered city name.
+
