@@ -60,5 +60,5 @@ console.log(event);
 }
 ```
 
-This will give user with full information on entered city name.
+This will give time information of entered city name.
 
